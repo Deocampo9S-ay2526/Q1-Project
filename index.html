@@ -1,115 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Q1 Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2-Project</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+     <!-- BOOTSTRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
-   <style>
-      form{
-         background-color:whitesmoke ;
-         padding: 10px;
-         margin: auto;
-         max-width: 80%;
-         border-radius: 10px;
-         border: 20px groove #7649fe;
-         color: black;
-         box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-      }
-
-      body{
-         background-image: url(https://www.cnet.com/a/img/resize/3389de9819279904c5a9d3b0fc08d29c717e0e8f/hub/2022/08/18/dae391cf-315c-4543-b8fb-adef44946d37/screen-shot-2022-08-18-at-2-02-33-pm.png?auto=webp&fit=crop&height=675&width=1200);
-         font-family: "Bitcount Prop Single Ink", serif; 
-      }
-
-      h1{
-         background-color: whitesmoke;
-         border: 20px outset #7649fe;
-      }
-
-       img{
-         border: 20px ridge #7649fe;
-         width: 250px;
-       }
-     
-
-
-
-   </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/e01fd0f1-eda0-443b-ab56-74f748469f01/Header.png?format=1500w" alt="Logo" style="width:300px;">
+            </a>
 
-   <div style="display: flex; gap: 28px;">
-       <u><h2>About me</h2></u> 
-       <u><h2>My works</h2></u> 
-       <u><h2>Contact me</h2></u>
-       </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
 
-<center>
+       <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-1g-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home-section">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">Courses Offered</a>
+                </li>
 
-   <img src="https://logosandtypes.com/wp-content/uploads/2025/06/STARLUX-Airlines-scaled.png">
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Enroll</a>
+                </li>
 
-   <h1>Cody Deocampo</h1>
-   <p>Future Airline Pilot</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact Us</a>
+                </li>
 
-   <h2>Who is Cody?</h2>
-   <p>Cody Deocampo is a 14 year old student studying at O.B. Montessori. He loves to race, run, fly, and play the guitar. In this website, you can learn all about the great Cody Deocampo. Enjoy!</p>
+            </ul>
+            
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-primary" type="submit">Search</button>   
+            </form>
+        </div>
+    </nav><br>
+
+     <div class="container-fluid mt-3">
+
+        <div class="container">
+            <div class="vertical"></div>
+            <div class="horizontal"></div>
+            <div class="inline"></div>
+            <div class="responsive"></div>
+        </div>
+
+    </div>
+
+   <div class="vertical-layout bg-light p-3 mb-3 rounded">
+    <h2>Contact Us</h2>
+        <form>
+            <!-- FULLNAME -->
+             <div class="Fullname mb-3">
+                <label class="form-label" for="inputFullname">Full name</label>
+                <input type="fullname" class="form-control"
+
+                id="inputFullname" placeholder="Enter your full name">
+
+            </div>
+            <!-- EMAIL -->
+            <div class="email mb-3">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input type="email" class="form-control" 
+
+                id="inputEmail" placeholder="Enter your email">
+            </div>
+
+            <!-- SUBJECT -->
+            <div class="subject mb-3">
+                <label class="form-label" for="inputSubject">Subject</label>
+                <input type="subject" class="form-control" 
+
+                id="inputSubject" placeholder="Enter your Subject">
+            </div>
 
 
-<h2>My hobbies!!!</h2>
-   <ul>
-      <li>Traveling</li>
-      <li>Guitar</li>
-      <li>Running</li>
-      <li>Swimming</li>
-      <li>Basketball</li>
+            <!-- BUTTON -->
+                <button type="submit" class="btn btn-primary">Submit</button>   
 
-   </ul>
-</center>
+        </form>
+    </div>
 
-<center>
-   <form>
-
-    <h2>Contact me!!!</h2>
-    <label for="fullname">Name:</label>
-    <input type="text" name="fullname"><br>
-
-    <label for="Address">Home Address (for fun):</label>
-    <input type="text" name="Address"><br>
-
-    <label>Telephone Number:</label>
-    <input type="mobilenum" name="mobilenum"><br>
-
-     <label>Email:</label>
-    <input type="Email" name="Email"><br>
-
-    Extra notes: <br>
-    <textarea cols="50" rows="5">No more than 400 characters long</textarea>
-    <br>
-
-    <input type="submit" name="submit" value="SUBMIT!!!">
- <input type="reset" name="reset" value="Start over.">
-
-<fieldset>
-   <center>
-   <small style="color: #7649fe">&copy2025 CODYPOGI All Rights Reserved</small>
-   </center>
-</fieldset>
-
-</form>
-
-
-
-</center>
-
+    <footer class="text-center py-3 bg-dark text-light mt-auto fixed-bottom">
+        &copy; 2025 Copyright
+    </footer>
 
 </body>
 </html>
